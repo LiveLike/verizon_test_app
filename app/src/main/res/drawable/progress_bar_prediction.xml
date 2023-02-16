@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <gradient
+                    android:angle="@integer/percent_bar_gradient_angle"
+                    android:endColor="#78405a"
+                    android:startColor="#5656AA"/>
+                   <!-- android:endColor="@color/livelike_prediction_bar_gradient_right"
+                    android:startColor="@color/livelike_prediction_bar_gradient_left"-->
+            </shape>
+        </scale>
+    </item>
+</layer-list>

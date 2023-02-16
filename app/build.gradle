@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.livelike.sampletestapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.livelike.sampletestapp"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+//        debug {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+//    implementation project(path: ':sdkfirst')
+
+    implementation files('libs/engagementsdk-2.70.2.1.aar')
+//    implementation(name:'engagementsdk-2.69.1', ext:'aar')
+//    implementation files('libs/livelike-core-2.69.1.jar')
+//    implementation files('libs/network-2.70.2.jar')
+//    implementation fileTree(include: ['*.aar'], dir: 'libs')
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.livelike.android-engagement-sdk:livelike-core-network:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-core-serialization:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-core-utils:2.70.2.1'
+
+
+    implementation 'com.livelike.android-engagement-sdk:livelike-kotlin-chat:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-kotlin-comment:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-kotlin-common:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-kotlin-gamification:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-kotlin-reaction:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-kotlin-video:2.70.2.1'
+    implementation 'com.livelike.android-engagement-sdk:livelike-kotlin-widget:2.70.2.1'
+
+
+    kapt "com.github.bumptech.glide:compiler:4.12.0"
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.18'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
+    implementation "com.github.bumptech.glide:glide:4.12.0"
+    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.18"
+    implementation "io.ktor:ktor-client-okhttp-jvm:2.1.1"
+    implementation "io.ktor:ktor-client-logging-jvm:2.1.1"
+    implementation "com.pubnub:pubnub-kotlin:7.4.0"
+    implementation("org.threeten:threetenbp:1.3.8")
+    implementation "com.google.code.gson:gson:2.8.6"
+    implementation "com.airbnb.android:lottie:3.5.0"
+
+
+//    implementation 'com.livelike.android-engagement-sdk:engagementsdk:2.65'
+//    implementation 'com.livelike.android-engagement-sdk:sceenic-plugin:2.62.1'
+
+//    implementation files('libs/sce.jar')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
