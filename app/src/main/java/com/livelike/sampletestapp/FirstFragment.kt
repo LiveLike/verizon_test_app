@@ -42,8 +42,6 @@ class FirstFragment : Fragment() {
             binding.widgetView.setSession(session)
         }
 
-
-
     }
 
     override fun onDestroyView() {
