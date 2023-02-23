@@ -11,7 +11,7 @@
     <!-- Image Slider -->
     <color name="livelike_image_slider_gradient_start">#41EDBC</color>
     <color name="livelike_image_slider_gradient_end">#AD28FF</color>
-    <color name="livelike_image_slider_bg">#C9C01B</color>
+    <color name="livelike_image_slider_bg">#FFA500</color>
     <color name="livelike_image_slider_widget_result_end_color">#1EFF5E</color>
     <color name="livelike_image_slider_widget_result_center_color">#FB7D0E</color>
 </resources>

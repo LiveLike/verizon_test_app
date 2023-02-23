@@ -5,8 +5,8 @@
             <shape>
                 <gradient
                     android:angle="@integer/percent_bar_gradient_angle"
-                    android:endColor="#347829"
-                    android:startColor="#347829" />
+                    android:endColor="#000000"
+                    android:startColor="#000000" />
             </shape>
         </scale>
     </item>
