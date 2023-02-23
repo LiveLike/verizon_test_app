@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Widgets-->
+    <item name="livelike_option_font" type="font">@font/roboto_bold</item>
+
+</resources>
